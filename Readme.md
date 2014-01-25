@@ -4,6 +4,8 @@ The python code and SQL queries in this repository are designed to find candidat
 
 Authors: Sean McLaughlin, Robert J. Brunner
 
+Note, the conversion between stellar mass (as measured from spectral absorption lines) and dark matter mass (or dynamical mass) was obtained from _Constraints on the Relationship between Stellar Mass and Halo Mass at Low and High Redshift_ by Benjamin P. Moster, Rachel S. Somerville, Christian Maulbetsch, Frank C. van den Bosch, Andrea V. Macciò, Thorsten Naab, and Ludwig Oser (2010, ApJ, 710, 903).
+
 ## Code Usage:
 
 ### EinsteinRad_2.py
