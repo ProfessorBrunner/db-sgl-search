@@ -1,4 +1,4 @@
-SELECT pt.objid, pt.ra, pt.dec, pz.z, SM.minLogMass, SM.maxLogMass from (
+SELECT pt.objid, pt.ra, pt.dec, pz.z, SM.minLogMass, SM.maxLogMass,t.NeighborObjID t.distance from (
 
 SELECT obj.objid, COUNT(*) as numNeighbors
 FROM
