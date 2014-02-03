@@ -1,4 +1,4 @@
-SELECT pt.objid, pt.ra, pt.dec, pz.z, SM.minLogMass, SM.maxLogMass from (
+SELECT pt.objid, pt.ra, pt.dec, pz.z, SM.minLogMass, SM.maxLogMass,N.NeighborObjID N.distance from (
 
 SELECT obj.objid, COUNT(*) as numNeighbors
 FROM
@@ -35,4 +35,5 @@ HAVING COUNT(obj.objid) > 0
   JOIN PhotoPrimary as pt on pt.objid = t.objid
   JOIN PhotoZ as pz on pz.objID = t.objID
 JOIN stellarMassPassivePort as SM on SM.specObjID = pt.specObjID
+JOIN Neighbors as N on N.objid = t.objid
 
